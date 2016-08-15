@@ -1,0 +1,59 @@
+unit unMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Controls.Presentation, FMX.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    LabelAdministrador: TLabel;
+    LabelSenha: TLabel;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  senha: String;
+  contador, verificador, cont: Integer;
+begin
+  Self.Caption := LabelAdministrador.Text;
+
+  contador := 0;
+  verificador := 0;
+  senha := FormatDateTime('yyyymmddhh', now);
+  for cont := 1 to 10 do
+  begin
+    contador := contador + StrToInt(Copy(senha, cont, 1));
+    verificador := verificador + (StrToInt(Copy(senha, cont, 1)) * cont * contador);
+  end;
+  senha := IntToStr(verificador) + IntToStr(contador);
+  for cont := 1 to Length(senha) do
+  begin
+    contador := contador + StrToInt(Copy(senha, cont, 1));
+    verificador := verificador + (StrToInt(Copy(senha, cont, 1)) * cont * contador);
+  end;
+  senha := IntToStr(verificador) + IntToStr(contador);
+  for cont := 1 to Length(senha) do
+  begin
+    contador := contador + StrToInt(Copy(senha, cont, 1));
+    verificador := verificador + (StrToInt(Copy(senha, cont, 1)) * cont * contador);
+  end;
+  senha := IntToStr(verificador) + IntToStr(contador);
+  // Result := dm.CriptoAcesso.EncodeString(dm.CriptoAcesso.Key,senha);
+  LabelSenha.Text := senha;
+end;
+
+end.
