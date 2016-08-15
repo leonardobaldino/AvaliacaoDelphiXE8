@@ -1,0 +1,170 @@
+inherited frameCadastroContato: TframeCadastroContato
+  Size.Width = 586.000000000000000000
+  inherited LayoutPrincipal: TLayout
+    Size.Width = 586.000000000000000000
+    inherited CalloutPanelPrincipal: TCalloutPanel
+      Position.Y = 5.000000000000000000
+      Size.Height = 434.000000000000000000
+      inherited GroupBoxTodos: TGroupBox
+        Text = 'Informa'#231#245'es para Contato'
+      end
+      inherited ListBoxLista: TListBox
+        Size.Height = 360.000000000000000000
+        ItemHeight = 40.000000000000000000
+        DefaultItemStyles.ItemStyle = 'ListBoxItem2Linhas1ImagemStyle'
+        Viewport.Width = 242.000000000000000000
+        Viewport.Height = 356.000000000000000000
+      end
+      inherited LayoutButtons: TLayout
+        Position.Y = 393.000000000000000000
+      end
+    end
+    inherited GroupBoxDetalhes: TGroupBox
+      Size.Width = 321.000000000000000000
+      Size.Height = 434.000000000000000000
+      Text = 'Detalhes do Contato'
+      object EditTipoContato: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 0
+        ReadOnly = True
+        Text = '0'
+        Position.X = 80.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 227.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object ButtonConsultaTipoContato: TButton
+          Anchors = [akTop, akRight]
+          Position.X = 203.000000000000000000
+          Size.Width = 24.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ButtonPesquisarStyle'
+          TabOrder = 0
+          TabStop = False
+        end
+      end
+      object EditAdicionais: TEdit
+        Tag = 1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 2
+        Position.X = 80.000000000000000000
+        Position.Y = 99.000000000000000000
+        Size.Width = 226.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditAdicionaisChange
+        OnEnter = EditAdicionaisEnter
+        OnExit = EditAdicionaisExit
+      end
+      object EditDescricaoContato: TEdit
+        Tag = 1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        Position.X = 80.000000000000000000
+        Position.Y = 67.000000000000000000
+        Size.Width = 226.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditDescricaoContatoChange
+        OnEnter = EditDescricaoContatoEnter
+        OnExit = EditDescricaoContatoExit
+      end
+      object LabelAdicionais: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 100.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Adicionais:'
+      end
+      object LabelContato: TLabel
+        Position.X = 229.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+      object LabelDescricao: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 68.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Descri'#231#227'o:'
+      end
+      object LabelTipo: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 36.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Tipo:'
+      end
+    end
+    inherited LayoutTitulo: TLayout
+      Visible = False
+    end
+    inherited PanelButtons: TPanel
+      Visible = False
+    end
+  end
+  inherited FDQuery: TFDQuery
+    AfterPost = FDQueryAfterPost
+    SQL.Strings = (
+      
+        'SELECT id, tipocontato_id, valor, adicional FROM sistema.contato' +
+        '_view')
+    object FDQueryid: TLargeintField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object FDQuerytipocontato_id: TLargeintField
+      FieldName = 'tipocontato_id'
+      Origin = 'tipocontato_id'
+    end
+    object FDQueryvalor: TWideMemoField
+      FieldName = 'valor'
+      Origin = 'valor'
+      BlobType = ftWideMemo
+    end
+    object FDQueryadicional: TWideMemoField
+      FieldName = 'adicional'
+      Origin = 'adicional'
+      BlobType = ftWideMemo
+    end
+  end
+  object BindSourceDBContato: TBindSourceDB
+    DataSet = FDQuery
+    ScopeMappings = <>
+    Left = 112
+    Top = 120
+  end
+  object BindingsListContato: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 145
+    Top = 119
+    object ContatoDescricao: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBContato
+      FieldName = 'valor'
+      Control = EditDescricaoContato
+      Track = False
+    end
+    object ContatoAdicional: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBContato
+      FieldName = 'adicional'
+      Control = EditAdicionais
+      Track = False
+    end
+  end
+end

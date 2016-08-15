@@ -1,0 +1,86 @@
+inherited frameManutencaoGrupoProduto: TframeManutencaoGrupoProduto
+  Size.Width = 768.000000000000000000
+  inherited LayoutPrincipal: TLayout
+    Size.Width = 768.000000000000000000
+    inherited CalloutPanelPrincipal: TCalloutPanel
+      inherited GroupBoxTodos: TGroupBox
+        Text = 'Todos os Grupos de Produto'
+      end
+      inherited ListBoxLista: TListBox
+        Viewport.Width = 242.000000000000000000
+        Viewport.Height = 262.000000000000000000
+      end
+    end
+    inherited GroupBoxDetalhes: TGroupBox
+      Size.Width = 503.000000000000000000
+      Text = 'Detalhes do Grupo de Produto'
+      object EditDescricao: TEdit
+        Tag = 1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 0
+        Position.X = 75.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 414.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object LabelDescricao: TLabel
+        StyledSettings = [Family, Size, FontColor]
+        Position.X = 10.000000000000000000
+        Position.Y = 41.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Descri'#231#227'o:'
+      end
+    end
+    inherited LayoutTitulo: TLayout
+      Size.Width = 768.000000000000000000
+    end
+    inherited PanelButtons: TPanel
+      Size.Width = 768.000000000000000000
+    end
+  end
+  inherited ActionList: TActionList
+    inherited ActionVoltarTela: TAction
+      OnExecute = ActionVoltarTelaExecute
+    end
+  end
+  inherited FDQuery: TFDQuery
+    BeforePost = FDQueryBeforePost
+    SQL.Strings = (
+      
+        'SELECT id, descricao FROM sistema.grupo_produto_view order by de' +
+        'scricao')
+    object FDQueryid: TLargeintField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object FDQuerydescricao: TWideMemoField
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      BlobType = ftWideMemo
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery
+    ScopeMappings = <>
+    Left = 112
+    Top = 120
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 145
+    Top = 120
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'descricao'
+      Control = EditDescricao
+      Track = False
+    end
+  end
+end

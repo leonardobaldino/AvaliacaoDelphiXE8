@@ -1,0 +1,98 @@
+object frameConsultaPadrao: TframeConsultaPadrao
+  Size.Width = 762.000000000000000000
+  Size.Height = 433.000000000000000000
+  Size.PlatformDefault = False
+  object PanelMain: TPanel
+    Align = Client
+    Size.Width = 762.000000000000000000
+    Size.Height = 407.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBoxLista: TListBox
+      Align = Client
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 758.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'ListBox4Linhas1ImagemStyle'
+      TabOrder = 0
+      DisableFocusEffect = True
+      ItemHeight = 25.000000000000000000
+      DefaultItemStyles.ItemStyle = 'ListBoxItem1LinhaStyle'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 754.000000000000000000
+      Viewport.Height = 357.000000000000000000
+    end
+    object PanelPesquisa: TPanel
+      Align = Top
+      Size.Width = 762.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object EditPesquisa: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 752.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        OnKeyUp = EditPesquisaKeyUp
+      end
+    end
+  end
+  object PanelTop: TPanel
+    Align = Top
+    Margins.Top = 1.000000000000000000
+    Margins.Right = 1.000000000000000000
+    Position.Y = 1.000000000000000000
+    Size.Width = 761.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'PanelMenuStyle'
+    TabOrder = 1
+    object ButtonFechar: TButton
+      Action = ActionFechar
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 730.000000000000000000
+      Size.Width = 31.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'ButtonExitStyle'
+      TabOrder = 0
+      Visible = True
+    end
+    object TextConsulta: TText
+      Align = Center
+      HitTest = False
+      Size.Width = 456.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Consulta'
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claAzure
+    end
+  end
+  object ActionListConsulta: TActionList
+    Left = 96
+    Top = 48
+    object ActionFechar: TAction
+      OnExecute = ActionFecharExecute
+    end
+  end
+  object FDQueryConsulta: TFDQuery
+    Connection = frmMain.FDConnection
+    Left = 136
+    Top = 48
+  end
+end

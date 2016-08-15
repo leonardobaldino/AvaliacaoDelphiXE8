@@ -1,0 +1,119 @@
+object frameConfigurarServidor: TframeConfigurarServidor
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object PanelConfigurandoServidor: TPanel
+    Align = Center
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ButtonConfigurar: TButton
+      Action = ActionConfigurar
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 72.000000000000000000
+      Position.Y = 184.000000000000000000
+      TabOrder = 0
+      Visible = True
+    end
+    object EditDB: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 152.000000000000000000
+      Position.Y = 72.000000000000000000
+      object LabelDB: TLabel
+        AutoSize = True
+        Position.X = -96.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Banco de Dados: '
+      end
+    end
+    object EditServidorIP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 152.000000000000000000
+      Position.Y = 104.000000000000000000
+      object LabelServidorIP: TLabel
+        AutoSize = True
+        Position.X = -67.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 63.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Servidor IP: '
+      end
+    end
+    object EditServidorNome: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 152.000000000000000000
+      Position.Y = 136.000000000000000000
+      object LabelServidorNome: TLabel
+        AutoSize = True
+        Position.X = -90.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 86.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Servidor Nome: '
+      end
+    end
+    object PanelTitulo: TPanel
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'panelmensagemstyle'
+      TabOrder = 4
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 320.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'TextClaroStyle'
+        TextSettings.Font.Size = 28.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'Configurando Servidor...'
+      end
+      object Label2: TLabel
+        Align = Bottom
+        Position.Y = 40.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'TextClaroStyle'
+        TextSettings.HorzAlign = Center
+        Text = 'N'#227'o foi poss'#237'vel realizar a conex'#227'o com o servidor.'
+      end
+    end
+    object ButtonSair: TButton
+      Action = ActionSair
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 168.000000000000000000
+      Position.Y = 184.000000000000000000
+      TabOrder = 5
+      Visible = True
+    end
+  end
+  object ActionList: TActionList
+    Left = 16
+    Top = 104
+    object ActionConfigurar: TAction
+      Text = 'Configurar'
+      OnExecute = ActionConfigurarExecute
+    end
+    object ActionSair: TAction
+      Text = 'Sair'
+      OnExecute = ActionSairExecute
+    end
+  end
+end

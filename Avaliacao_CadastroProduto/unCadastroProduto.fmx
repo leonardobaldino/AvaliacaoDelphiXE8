@@ -1,0 +1,352 @@
+inherited frameCadastroProduto: TframeCadastroProduto
+  Size.Width = 1329.000000000000000000
+  Size.Height = 646.000000000000000000
+  inherited OpenDialog: TOpenDialog
+    Top = 8
+  end
+  inherited LayoutPrincipal: TLayout
+    Size.Width = 1329.000000000000000000
+    Size.Height = 646.000000000000000000
+    inherited PanelTop: TPanel
+      Size.Width = 1329.000000000000000000
+      inherited LayoutTitulo: TLayout
+        Size.Width = 1329.000000000000000000
+        inherited LabelTitulo: TLabel
+          Text = 'Fornecedor'
+        end
+      end
+    end
+    inherited TabControl: TTabControl
+      Size.Width = 1329.000000000000000000
+      Size.Height = 606.000000000000000000
+      TabIndex = 1
+      OnChange = TabControlChange
+      inherited TabItemList: TTabItem
+        IsSelected = False
+        inherited LayoutList: TLayout
+          Size.Width = 1329.000000000000000000
+          Size.Height = 531.000000000000000000
+          inherited PanelList: TPanel
+            Size.Width = 1329.000000000000000000
+            Size.Height = 531.000000000000000000
+            inherited ListBoxList: TListBox
+              Size.Width = 1329.000000000000000000
+              Size.Height = 498.000000000000000000
+              Viewport.Width = 1325.000000000000000000
+              Viewport.Height = 494.000000000000000000
+            end
+            inherited PanelPesquisa: TPanel
+              Size.Width = 1329.000000000000000000
+              inherited EditPesquisa: TEdit
+                Size.Width = 1319.000000000000000000
+                OnKeyUp = EditPesquisaKeyUp
+              end
+            end
+          end
+        end
+        inherited PanelBottom: TPanel
+          Position.Y = 572.000000000000000000
+          Size.Width = 1329.000000000000000000
+        end
+        inherited PanelSuperior: TPanel
+          Size.Width = 1329.000000000000000000
+        end
+      end
+      inherited TabItemCad: TTabItem
+        IsSelected = True
+        inherited Panel: TPanel
+          Size.Width = 1329.000000000000000000
+          Size.Height = 557.000000000000000000
+          inherited ScrollBoxDetalhes: TScrollBox
+            Size.Width = 1329.000000000000000000
+            Size.Height = 557.000000000000000000
+            Viewport.Width = 1329.000000000000000000
+            Viewport.Height = 557.000000000000000000
+            object LayoutInformacoes1: TLayout
+              Align = Left
+              Margins.Right = 20.000000000000000000
+              Size.Width = 537.000000000000000000
+              Size.Height = 557.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object GroupBoxInformacoes1: TGroupBox
+                Position.X = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Width = 514.000000000000000000
+                Size.Height = 320.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Informa'#231#245'es Gerais'
+                TabOrder = 0
+                object EditQtdeEstoque: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 14
+                  Position.X = 400.000000000000000000
+                  Position.Y = 152.000000000000000000
+                  OnExit = EditQtdeEstoqueExit
+                end
+                object EditValorUnitario: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 13
+                  Position.X = 96.000000000000000000
+                  Position.Y = 152.000000000000000000
+                  OnExit = EditValorUnitarioExit
+                end
+                object LabelFornecedor: TLabel
+                  AutoSize = True
+                  Position.X = 10.000000000000000000
+                  Position.Y = 74.000000000000000000
+                  Size.Width = 67.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Fornecedor:'
+                end
+                object EditDescricao: TEdit
+                  Tag = 1
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  StyleLookup = 'EditClearStyle'
+                  TabOrder = 0
+                  Position.X = 96.000000000000000000
+                  Position.Y = 33.000000000000000000
+                  Size.Width = 404.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnChange = EditDescricaoChange
+                  OnKeyUp = EditDescricaoKeyUp
+                  OnExit = EditDescricaoExit
+                end
+                object LabelDescricao: TLabel
+                  AutoSize = True
+                  Position.X = 10.000000000000000000
+                  Position.Y = 34.000000000000000000
+                  Size.Width = 58.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Descri'#231#227'o:'
+                end
+                object LabelUnidade: TLabel
+                  AutoSize = True
+                  Position.X = 362.000000000000000000
+                  Position.Y = 114.000000000000000000
+                  Size.Width = 51.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Unidade:'
+                end
+                object EditUnidade: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 3
+                  MaxLength = 10
+                  Position.X = 416.000000000000000000
+                  Position.Y = 113.000000000000000000
+                  Size.Width = 84.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnChange = EditUnidadeChange
+                  OnKeyUp = EditUnidadeKeyUp
+                  OnExit = EditUnidadeExit
+                end
+                object EditFornecedor: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Anchors = [akLeft, akTop, akRight]
+                  TabOrder = 1
+                  ReadOnly = True
+                  Text = '0'
+                  Position.X = 96.000000000000000000
+                  Position.Y = 73.000000000000000000
+                  Size.Width = 404.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnKeyUp = EditFornecedorKeyUp
+                  object ButtonConsultaFornecedor: TButton
+                    Anchors = [akTop, akRight]
+                    Position.X = 380.000000000000000000
+                    Size.Width = 24.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'ButtonPesquisarStyle'
+                    TabOrder = 0
+                    TabStop = False
+                    OnClick = ButtonConsultaFornecedorClick
+                  end
+                end
+                object EditGrupo: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Anchors = [akLeft, akTop, akRight]
+                  TabOrder = 2
+                  ReadOnly = True
+                  Text = '0'
+                  Position.X = 96.000000000000000000
+                  Position.Y = 113.000000000000000000
+                  Size.Width = 241.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnKeyUp = EditGrupoKeyUp
+                  object ButtonConsultaGrupo: TButton
+                    Anchors = [akTop, akRight]
+                    Position.X = 217.000000000000000000
+                    Size.Width = 24.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                    StyleLookup = 'ButtonPesquisarStyle'
+                    TabOrder = 0
+                    TabStop = False
+                    OnClick = ButtonConsultaGrupoClick
+                  end
+                end
+                object LabelGrupo: TLabel
+                  AutoSize = True
+                  Position.X = 10.000000000000000000
+                  Position.Y = 114.000000000000000000
+                  Size.Width = 40.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Grupo:'
+                end
+                object LabelValorUnitario: TLabel
+                  AutoSize = True
+                  Position.X = 10.000000000000000000
+                  Position.Y = 154.000000000000000000
+                  Size.Width = 80.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Valor Unitario:'
+                end
+                object LabelQtdeEstoque: TLabel
+                  AutoSize = True
+                  Position.X = 314.000000000000000000
+                  Position.Y = 154.000000000000000000
+                  Size.Width = 81.000000000000000000
+                  Size.Height = 16.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Qtde. Estoque:'
+                end
+              end
+              object LineTela1: TLine
+                LineType = Top
+                Position.X = 20.000000000000000000
+                Position.Y = 385.000000000000000000
+                Size.Width = 513.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object PanelTela1: TPanel
+                Position.X = 18.000000000000000000
+                Position.Y = 370.000000000000000000
+                Size.Width = 30.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'PanelCircleStyle'
+                TabOrder = 2
+                object LabelTela1: TLabel
+                  Align = Client
+                  StyledSettings = [Family, Style, FontColor]
+                  Size.Width = 30.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 15.000000000000000000
+                  TextSettings.HorzAlign = Center
+                  TextSettings.WordWrap = False
+                  Text = '1'
+                end
+              end
+            end
+          end
+          inline frameConsulta: TframeConsultaPadrao
+            Align = Center
+            Size.Width = 400.000000000000000000
+            Size.Height = 350.000000000000000000
+            Size.PlatformDefault = False
+            Visible = False
+            inherited PanelMain: TPanel
+              Size.Width = 400.000000000000000000
+              Size.Height = 324.000000000000000000
+              inherited ListBoxLista: TListBox
+                Size.Width = 396.000000000000000000
+                Size.Height = 278.000000000000000000
+                OnDblClick = frameConsultaListBoxListaDblClick
+                OnKeyUp = frameConsultaListBoxListaKeyUp
+                Viewport.Width = 392.000000000000000000
+                Viewport.Height = 274.000000000000000000
+              end
+              inherited PanelPesquisa: TPanel
+                Size.Width = 400.000000000000000000
+                inherited EditPesquisa: TEdit
+                  Size.Width = 390.000000000000000000
+                  OnKeyUp = frameConsultaEditPesquisaKeyUp
+                end
+              end
+            end
+            inherited PanelTop: TPanel
+              Size.Width = 399.000000000000000000
+              inherited ButtonFechar: TButton
+                Position.X = 368.000000000000000000
+              end
+            end
+            inherited ActionListConsulta: TActionList
+              Left = 688
+              Top = 8
+              inherited ActionFechar: TAction
+                OnExecute = frameConsultaActionFecharExecute
+              end
+            end
+            inherited FDQueryConsulta: TFDQuery
+              Left = 728
+              Top = 8
+            end
+          end
+        end
+        inherited PanelButtons: TPanel
+          Size.Width = 1329.000000000000000000
+        end
+      end
+    end
+  end
+  inherited ActionList: TActionList
+    Top = 8
+    inherited ActionNovoRegistro: TAction
+      Text = 'Inserir Fornecedor'
+    end
+    inherited ActionExcluirRegistro: TAction
+      Text = 'Excluir Fornecedor'
+    end
+  end
+  inherited FDQueryPrincipal: TFDQuery
+    SQL.Strings = (
+      'select * from sistema.produto_view')
+    Left = 48
+    Top = 8
+    object FDQueryPrincipalid: TLargeintField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object FDQueryPrincipaldescricao: TWideMemoField
+      FieldName = 'descricao'
+      BlobType = ftWideMemo
+    end
+    object FDQueryPrincipalgrupo_id: TLargeintField
+      FieldName = 'grupo_id'
+    end
+    object FDQueryPrincipalfornecedor_id: TLargeintField
+      FieldName = 'fornecedor_id'
+    end
+    object FDQueryPrincipaliseditando: TBooleanField
+      FieldName = 'iseditando'
+    end
+    object FDQueryPrincipalunidade: TWideMemoField
+      FieldName = 'unidade'
+      BlobType = ftWideMemo
+    end
+    object FDQueryPrincipalvalor_unitario: TFMTBCDField
+      FieldName = 'valor_unitario'
+    end
+    object FDQueryPrincipalqtde_estoque: TFMTBCDField
+      FieldName = 'qtde_estoque'
+    end
+  end
+end

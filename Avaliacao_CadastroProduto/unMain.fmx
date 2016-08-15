@@ -1,0 +1,362 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = []
+  BorderStyle = None
+  Caption = 'Infamat V5'
+  ClientHeight = 600
+  ClientWidth = 800
+  Position = ScreenCenter
+  StyleBook = StyleBook
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object GloomEffect1: TGloomEffect
+    GloomIntensity = 1.000000000000000000
+    BaseIntensity = 0.500000000000000000
+    GloomSaturation = 1.000000000000000000
+    BaseSaturation = 0.500000000000000000
+  end
+  object StyleBook: TStyleBook
+    Left = 144
+    Top = 136
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+  object TimerBackGround: TTimer
+    Interval = 100
+    OnTimer = TimerBackGroundTimer
+    Left = 144
+    Top = 200
+  end
+  object LayoutMain: TLayout
+    Align = Client
+    Size.Width = 800.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LayoutTelas: TLayout
+      Align = Client
+      Size.Width = 606.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Panel4: TPanel
+        Align = Client
+        Size.Width = 606.000000000000000000
+        Size.Height = 532.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'PanelClaroStyle'
+        TabOrder = 5
+      end
+      object TabControl: TTabControl
+        Align = Client
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 605.000000000000000000
+        Size.Height = 531.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'TabControlDefaultStyle'
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = Top
+      end
+      object ImageBackground: TImage
+        MultiResBitmap.Height = 400
+        MultiResBitmap.Width = 600
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Opacity = 0.500000000000000000
+        Size.Width = 606.000000000000000000
+        Size.Height = 532.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        WrapMode = Center
+      end
+      object PanelStatus: TPanel
+        Align = Bottom
+        Position.Y = 560.000000000000000000
+        Size.Width = 606.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'PanelMenuStyle'
+        TabOrder = 2
+        object TextStatus: TText
+          Align = Center
+          Size.Width = 456.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claAzure
+        end
+      end
+      object PopupBoxTabs: TPopupBox
+        Anchors = [akTop, akRight]
+        Position.X = 573.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'PopupBoxTabStyle'
+        TabOrder = 1
+        OnChange = PopupBoxTabsChange
+      end
+      object LayoutMainTop: TLayout
+        Align = Top
+        Size.Width = 606.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Line3: TLine
+          Align = Bottom
+          LineType = Left
+          Position.Y = 27.000000000000000000
+          Size.Width = 606.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object PanelTop: TPanel
+          Align = Top
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 605.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'PanelMenuStyle'
+          TabOrder = 1
+          OnDblClick = PanelTopDblClick
+          object PanelFecharSistema: TPanel
+            Align = Right
+            Position.X = 575.000000000000000000
+            Size.Width = 30.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'closebtnstyle'
+            TabOrder = 0
+            OnClick = PanelFecharSistemaClick
+          end
+          object PanelMinimizarSistema: TPanel
+            Align = Right
+            Position.X = 515.000000000000000000
+            Size.Width = 30.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'minbtnstyle'
+            TabOrder = 1
+            OnClick = PanelMinimizarSistemaClick
+          end
+          object PanelMaximizarSistema: TPanel
+            Align = Right
+            Position.X = 545.000000000000000000
+            Size.Width = 30.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'maxbtnstyle'
+            TabOrder = 2
+            OnClick = PanelMaximizarSistemaClick
+          end
+        end
+      end
+    end
+    object LayoutButtons: TLayout
+      Align = Left
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 194.000000000000000000
+      Size.Height = 599.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object PanelExpand: TPanel
+        Align = Right
+        Position.X = 160.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 574.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'PanelMenuStyle'
+        TabOrder = 0
+        OnClick = PanelExpandClick
+        object Text2: TText
+          Align = Center
+          HitTest = False
+          RotationAngle = -90.000000000000000000
+          Size.Width = 456.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Menu - Clique Aqui'
+          TextSettings.Font.Size = 17.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claAzure
+        end
+      end
+      object PanelButton: TPanel
+        Align = Client
+        Size.Width = 160.000000000000000000
+        Size.Height = 574.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'PanelMenuStyle'
+        TabOrder = 1
+        object ButtonMenuFornecedor: TButton
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 54.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Fornecedor'
+          OnClick = ButtonMenuFornecedorClick
+        end
+        object ButtonMenuManutencaoSistema: TButton
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 108.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 54.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Sistema'
+          OnClick = ButtonMenuManutencaoSistemaClick
+        end
+        object ButtonMenuProduto: TButton
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 54.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Produto'
+          OnClick = ButtonMenuProdutoClick
+        end
+        object ImageEmpresa: TImage
+          MultiResBitmap.Height = 75
+          MultiResBitmap.Width = 181
+          MultiResBitmap = <
+            item
+            end>
+          Align = Bottom
+          MarginWrapMode = Center
+          Margins.Left = 2.000000000000000000
+          Margins.Bottom = 40.000000000000000000
+          Position.X = 2.000000000000000000
+          Position.Y = 469.000000000000000000
+          Size.Width = 158.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ButtonMenuAjuda: TButton
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 162.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 54.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Ajuda'
+          OnClick = ButtonMenuAjudaClick
+        end
+      end
+      object Line1: TLine
+        Align = Right
+        LineType = Left
+        Position.X = 193.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 574.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Layout1: TLayout
+        Align = Top
+        Size.Width = 194.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object PanelLogoInfamat: TPanel
+          Align = Left
+          Size.Width = 194.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'PanelMenuStyle'
+          TabOrder = 0
+          object LayoutLogoInfamat: TLayout
+            Align = Left
+            Size.Width = 28.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object ImageLogoInfamat: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Center
+              MarginWrapMode = Center
+              Size.Width = 24.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object TextInfamatV5: TText
+            Align = Left
+            Position.X = 28.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Style = [fsBold]
+            TextSettings.FontColor = claAzure
+          end
+        end
+        object Line2: TLine
+          Align = Right
+          LineType = Left
+          Position.X = 193.000000000000000000
+          Size.Width = 1.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'Server=localhost'
+      'Database=avaliacao'
+      'User_Name=postgres'
+      'Password=Z?:3H3!G_4`n'
+      'DriverID=pG')
+    LoginPrompt = False
+    Left = 144
+    Top = 8
+  end
+  object FDGUIxWaitCursor: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 144
+    Top = 40
+  end
+  object FDQuery: TFDQuery
+    Connection = FDConnection
+    Transaction = FDTransaction
+    Left = 144
+    Top = 104
+  end
+  object FDTransaction: TFDTransaction
+    Connection = FDConnection
+    Left = 144
+    Top = 167
+  end
+  object FDPhysPgDriverLink: TFDPhysPgDriverLink
+    VendorLib = 
+      'I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release\' +
+      'libpq.dll'
+    Left = 143
+    Top = 72
+  end
+end

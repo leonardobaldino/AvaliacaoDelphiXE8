@@ -1,0 +1,241 @@
+object frameTelaCadastroPadrao: TframeTelaCadastroPadrao
+  Size.Width = 732.000000000000000000
+  Size.Height = 443.000000000000000000
+  Size.PlatformDefault = False
+  OnKeyUp = FrameKeyUp
+  object OpenDialog: TOpenDialog
+    DefaultExt = 'jpg'
+    Filter = 'JPG, PNG|*.jpg; *.png'
+    Left = 112
+    Top = 96
+  end
+  object LayoutPrincipal: TLayout
+    Align = Client
+    Size.Width = 732.000000000000000000
+    Size.Height = 443.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object PanelTop: TPanel
+      Align = Top
+      Size.Width = 732.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LayoutTitulo: TLayout
+        Align = Top
+        Size.Width = 732.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object LabelTitulo: TLabel
+          Align = Center
+          StyledSettings = [Family, Style]
+          Size.Width = 172.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 26.000000000000000000
+          TextSettings.FontColor = xFF315B7D
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'Titulo'
+        end
+      end
+    end
+    object TabControl: TTabControl
+      Align = Client
+      Size.Width = 732.000000000000000000
+      Size.Height = 403.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabOrder = 1
+      TabPosition = None
+      object TabItemList: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemList'
+        object LayoutList: TLayout
+          Align = Client
+          Size.Width = 732.000000000000000000
+          Size.Height = 328.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object PanelList: TPanel
+            Align = Client
+            Size.Width = 732.000000000000000000
+            Size.Height = 328.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object ListBoxList: TListBox
+              Align = Client
+              Size.Width = 732.000000000000000000
+              Size.Height = 295.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              OnDblClick = ListBoxListDblClick
+              DisableFocusEffect = True
+              ItemHeight = 56.000000000000000000
+              DefaultItemStyles.ItemStyle = 'ListBoxItem3Linhas2ColunasStyle'
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              Viewport.Width = 728.000000000000000000
+              Viewport.Height = 291.000000000000000000
+            end
+            object PanelPesquisa: TPanel
+              Align = Top
+              Size.Width = 732.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object EditPesquisa: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 0
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 722.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+        end
+        object PanelBottom: TPanel
+          Align = Bottom
+          Position.Y = 369.000000000000000000
+          Size.Width = 732.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ButtonRefresh: TButton
+            Action = ActionAtualizarLista
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 7.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 154.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'ButtonAtualizarStyle'
+            TabOrder = 0
+            Visible = True
+          end
+        end
+        object PanelSuperior: TPanel
+          Align = Top
+          Size.Width = 732.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object ButtonNovoRegistro: TButton
+            Action = ActionNovoRegistro
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 16.000000000000000000
+            Position.Y = 7.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'ButtonNewStyle'
+            TabOrder = 1
+            TextSettings.HorzAlign = Leading
+            Visible = True
+          end
+          object ButtonExcluirRegistro: TButton
+            Action = ActionExcluirRegistro
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 216.000000000000000000
+            Position.Y = 7.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'ButtonDeleteStyle'
+            TabOrder = 0
+            TextSettings.HorzAlign = Leading
+            Visible = True
+          end
+        end
+      end
+      object TabItemCad: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemCad'
+        object Panel: TPanel
+          Align = Client
+          Size.Width = 732.000000000000000000
+          Size.Height = 354.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'PanelClaroStyle'
+          TabOrder = 0
+          object ScrollBoxDetalhes: TScrollBox
+            Align = Client
+            Size.Width = 732.000000000000000000
+            Size.Height = 354.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Viewport.Width = 732.000000000000000000
+            Viewport.Height = 354.000000000000000000
+          end
+        end
+        object PanelButtons: TPanel
+          Align = Top
+          Size.Width = 732.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ButtonReturn: TButton
+            Action = ActionVoltarTela
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'ButtonReturnStyle'
+            TabOrder = 0
+            Visible = True
+          end
+        end
+      end
+    end
+  end
+  object ActionList: TActionList
+    Left = 16
+    Top = 96
+    object ActionNovoRegistro: TAction
+      Text = 'ActionNovoRegistro'
+      OnExecute = ActionNovoRegistroExecute
+    end
+    object ActionAtualizarLista: TAction
+      Text = 'Atualizar Listagem'
+      OnExecute = ActionAtualizarListaExecute
+    end
+    object ActionExcluirRegistro: TAction
+      Text = 'Excluir'
+      OnExecute = ActionExcluirRegistroExecute
+    end
+    object ActionVoltarTela: TAction
+      OnExecute = ActionVoltarTelaExecute
+    end
+  end
+  object FDQueryPrincipal: TFDQuery
+    Connection = frmMain.FDConnection
+    Left = 56
+    Top = 97
+  end
+end
