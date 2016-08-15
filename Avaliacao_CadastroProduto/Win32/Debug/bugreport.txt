@@ -1,0 +1,1494 @@
+date/time          : 2016-08-14, 18:37:29, 233ms
+computer name      : XDARK
+user name          : Administrator <admin>
+registered owner   : Microsoft / Microsoft
+operating system   : Windows 7 x64 build 7600
+system language    : English
+system up time     : 5 hours 56 minutes
+program up time    : 2 minutes 29 seconds
+processors         : 4x Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+physical memory    : 1640/8054 MB (free/total)
+free disk space    : (C:) 70.91 GB (I:) 9.36 GB
+display mode       : 1920x1080, 32 bit
+process id         : $29d4
+allocated memory   : 116.67 MB
+largest free block : 492.19 MB
+executable         : InfamatV5_SocialXE8.exe
+exec. date/time    : 2016-08-14 18:34
+version            : 1.0.0.0
+compiled with      : Delphi XE8
+madExcept version  : 4.0.12
+callstack crc      : $aa76ba89, $c5e6ee8b, $c5e6ee8b
+count              : 2
+exception number   : 2
+exception class    : EPgNativeException
+exception message  : [FireDAC][Phys][PG][libpq] ERROR: function sistema.fornecedor_pesquisar_listagem(unknown) does not exist. No function matches the given name and argument types. You might need to add explicit type casts.
+
+main thread ($2b8c):
+00969275 +0119 InfamatV5_SocialXE8.exe FireDAC.Stan.Error                FDException
+00bd422c +00d8 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            Error
+00bd431a +0042 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            TPgConnection.CheckResult
+00bd8706 +0006 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            TPgStatement.Check
+00bd8c33 +00e7 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            LibPrepare
+00bd8ccd +0041 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            TPgStatement.InternalPrepare
+00bd8e15 +0105 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper            TPgStatement.PrepareSQL
+00be2bac +0394 InfamatV5_SocialXE8.exe FireDAC.Phys.PG                   TFDPhysPgCommand.InternalPrepare
+009f7be2 +01ee InfamatV5_SocialXE8.exe FireDAC.Phys                      TFDPhysCommand.Prepare
+00a6bb41 +01cd InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDCustomCommand.InternalPrepare
+00a6be9e +01be InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDCustomCommand.SetPrepared
+00a6c3d9 +0019 InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDCustomCommand.Prepare
+00a72bda +00d6 InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDAdaptedDataSet.DoPrepareSource
+00a749a9 +0049 InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDRdbmsDataSet.SetPrepared
+00a74ca2 +0002 InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDRdbmsDataSet.Prepare
+00a74e08 +0158 InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDRdbmsDataSet.Open
+00a74e2d +000d InfamatV5_SocialXE8.exe FireDAC.Comp.Client               TFDRdbmsDataSet.Open
+00df7243 +0043 InfamatV5_SocialXE8.exe unConsultaPadrao           52  +2 TframeConsultaPadrao.Consultar
+00e0a23a +010a InfamatV5_SocialXE8.exe unCadastroProduto         473 +11 TframeCadastroProduto.PesquisarPopup
+00e092ae +001a InfamatV5_SocialXE8.exe unCadastroProduto         313  +1 TframeCadastroProduto.frameConsultaEditPesquisaKeyUp
+00878a88 +0020 InfamatV5_SocialXE8.exe FMX.Controls                      TControl.KeyUp
+006a10f2 +001a InfamatV5_SocialXE8.exe FMX.Controls.Presentation         TPresentedControl.KeyUp
+008f6244 +0044 InfamatV5_SocialXE8.exe FMX.Forms                         TCommonCustomForm.KeyUp
+0083ad86 +1032 InfamatV5_SocialXE8.exe FMX.Platform.Win                  WndProc
+75717df5 +000a USER32.dll                                                DispatchMessageW
+008365cc +002c InfamatV5_SocialXE8.exe FMX.Platform.Win                  TPlatformWin.HandleMessage
+008f0883 +003b InfamatV5_SocialXE8.exe FMX.Forms                         TApplication.HandleMessage
+00836417 +0033 InfamatV5_SocialXE8.exe FMX.Platform.Win                  TPlatformWin.Run
+008f23f1 +005d InfamatV5_SocialXE8.exe FMX.Forms                         TApplication.Run
+00e2746b +003b InfamatV5_SocialXE8.exe InfamatV5_SocialXE8        37  +3 initialization
+77753675 +0010 kernel32.dll                                              BaseThreadInitThunk
+
+thread $1834:
+77e200e6 +0e ntdll.dll     NtWaitForMultipleObjects
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2658:
+77e200e6 +0e ntdll.dll       NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll  WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll    WaitForMultipleObjectsEx
+7775191c +13 kernel32.dll    WaitForMultipleObjects
+77753675 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $28d0:
+77e200e6 +0e ntdll.dll                         NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll                    WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll                      WaitForMultipleObjectsEx
+757203d4 +f4 USER32.dll                        MsgWaitForMultipleObjectsEx
+75720669 +1a USER32.dll                        MsgWaitForMultipleObjects
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+746178b3 +00 gdiplus.dll
+
+thread $26b4: <priority:1>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2424:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $25a4: <priority:1>
+77e1f8e2 +0e ntdll.dll                         NtRemoveIoCompletion
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+6d7ec3df +00 mswsock.dll
+
+thread $2154: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2840: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $20e4: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2268: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2918: <priority:1>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $29b4: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2bd0: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2738: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1880: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $24b8:
+77e200e6 +0e ntdll.dll                         NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll                    WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll                      WaitForMultipleObjectsEx
+7775191c +13 kernel32.dll                      WaitForMultipleObjects
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $32c: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2414: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1b28: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2864: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $26b4 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $24bc:
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($2b8c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2944:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $4f8:
+77e1fd1a +0e ntdll.dll                         NtDelayExecution
+75812c4a +5f KERNELBASE.dll                    SleepEx
+7581351b +0a KERNELBASE.dll                    Sleep
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $27a8 at:
+7531642e +00 ole32.dll
+
+thread $2bdc:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2b4c:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 InfamatV5_SocialXE8.exe 1.0.0.0            I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+05eb0000 nvwgf2um.dll            10.18.13.5850      C:\Windows\system32
+06d00000 libpq.dll               9.4.4.15193        I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+06d30000 VSINIT.dll              4.5.538.0          I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+06d50000 LIBEAY32.dll            0.9.8.6            I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+093d0000 d3d10_1.dll             6.1.7600.16385     C:\Windows\system32
+0c4d0000 d3d10core.dll           6.1.7600.16385     C:\Windows\system32
+0ca50000 d3d10_1core.dll         6.1.7600.16385     C:\Windows\system32
+0fa80000 MSVCR120.dll            12.0.21005.1       I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+10000000 PATROLPRO.DLL           1.4.0.0            C:\Program Files (x86)\BillP Studios\WinPatrol
+10480000 FaultRep.dll            6.1.7600.16385     C:\Windows\system32
+21820000 d3d10.dll               6.1.7600.16385     C:\Windows\system32
+32100000 d2d1.dll                6.1.7600.16385     C:\Windows\system32
+50e00000 SSLEAY32.dll            5.1.33.0           I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+56c50000 shdocvw.dll             6.1.7600.16385     C:\Windows\System32
+56ca0000 LINKINFO.dll            6.1.7600.16385     C:\Windows\system32
+59720000 DWRITE.DLL              6.1.7600.16385     C:\Windows\system32
+5c200000 MSVCR80.dll             8.0.50727.6195     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a
+61cc0000 intl.dll                0.18.1.0           I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+63d50000 nvapi.dll               10.18.13.5850      C:\Windows\system32
+64080000 nvspcap.dll             2.11.3.5           C:\Windows\system32
+64ce0000 gbpinj.dll              1.4.0.0            C:\Program Files (x86)\GbPlugin
+67960000 windowscodecs.dll       6.1.7600.16385     C:\Windows\system32
+68790000 d3d9.dll                6.1.7600.16385     C:\Windows\system32
+68960000 dxgi.dll                6.1.7600.16385     C:\Windows\system32
+68a50000 d3d8thk.dll             6.1.7600.16385     C:\Windows\system32
+68aa0000 d3d11.dll               6.1.7600.16385     C:\Windows\system32
+6b900000 NTDSAPI.dll             6.1.7600.16385     C:\Windows\system32
+6b920000 fastprox.dll            6.1.7600.16385     C:\Windows\system32\wbem
+6b9c0000 wbemsvc.dll             6.1.7600.16385     C:\Windows\system32\wbem
+6bc70000 wship6.dll              6.1.7600.16385     C:\Windows\System32
+6bff0000 rasadhlp.dll            6.1.7600.16385     C:\Windows\system32
+6c000000 fwpuclnt.dll            6.1.7600.16385     C:\Windows\System32
+6c080000 DNSAPI.dll              6.1.7600.16385     C:\Windows\system32
+6d480000 dwmapi.dll              6.1.7600.16385     C:\Windows\system32
+6d4d0000 wshtcpip.dll            6.1.7600.16385     C:\Windows\System32
+6d7e0000 mswsock.dll             6.1.7600.16385     C:\Windows\system32
+6d820000 WINNSI.DLL              6.1.7600.16385     C:\Windows\system32
+6d830000 uxtheme.dll             6.1.7600.16385     C:\Windows\system32
+6d8b0000 IPHLPAPI.DLL            6.1.7600.16385     C:\Windows\system32
+6e670000 Secur32.dll             6.1.7600.16484     C:\Windows\system32
+6e8f0000 wbemcomn.dll            6.1.7600.16385     C:\Windows\system32
+6e950000 webio.dll               6.1.7600.16385     C:\Windows\system32
+6e9a0000 WINHTTP.dll             6.1.7600.16385     C:\Windows\system32
+72e90000 bcryptprimitives.dll    6.1.7600.16385     C:\Windows\SysWOW64
+72ed0000 bcrypt.dll              6.1.7600.16385     C:\Windows\system32
+72ef0000 ncrypt.dll              6.1.7600.16385     C:\Windows\system32
+72f30000 rsaenh.dll              6.1.7600.16385     C:\Windows\system32
+72f70000 CRYPTSP.dll             6.1.7600.16385     C:\Windows\system32
+72fb0000 RpcRtRemote.dll         6.1.7600.16385     C:\Windows\system32
+72fc0000 wbemprox.dll            6.1.7600.16385     C:\Windows\system32\wbem
+745d0000 gdiplus.dll             6.1.7600.16385     C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca
+74850000 PROPSYS.dll             7.0.7600.16385     C:\Windows\system32
+74950000 apphelp.dll             6.1.7600.16385     C:\Windows\system32
+749a0000 comctl32.dll            6.10.7600.16385    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74b40000 ntmarta.dll             6.1.7600.16385     C:\Windows\system32
+74c00000 winmm.dll               6.1.7600.16385     C:\Windows\system32
+74c70000 profapi.dll             6.1.7600.16385     C:\Windows\system32
+74cc0000 winspool.drv            6.1.7600.16385     C:\Windows\system32
+74d70000 wsock32.dll             6.1.7600.16385     C:\Windows\system32
+74da0000 version.dll             6.1.7600.16385     C:\Windows\system32
+74e70000 CRYPTBASE.dll           6.1.7600.16385     C:\Windows\syswow64
+74e80000 SspiCli.dll             6.1.7600.16484     C:\Windows\syswow64
+75020000 PSAPI.DLL               6.1.7600.16385     C:\Windows\syswow64
+75030000 MSCTF.dll               6.1.7600.16385     C:\Windows\syswow64
+75100000 WS2_32.dll              6.1.7600.16385     C:\Windows\syswow64
+75140000 DEVOBJ.dll              6.1.7600.16385     C:\Windows\syswow64
+75260000 comdlg32.dll            6.1.7600.16385     C:\Windows\syswow64
+752e0000 ole32.dll               6.1.7600.16385     C:\Windows\syswow64
+75440000 msvcrt.dll              7.0.7600.16385     C:\Windows\syswow64
+756f0000 LPK.dll                 6.1.7600.16385     C:\Windows\syswow64
+75700000 USER32.dll              6.1.7600.16385     C:\Windows\syswow64
+75800000 KERNELBASE.dll          6.1.7600.16385     C:\Windows\syswow64
+75850000 NSI.dll                 6.1.7600.16385     C:\Windows\syswow64
+75860000 RPCRT4.dll              6.1.7600.16385     C:\Windows\syswow64
+75950000 GDI32.dll               6.1.7600.16385     C:\Windows\syswow64
+759e0000 shell32.dll             6.1.7600.16644     C:\Windows\syswow64
+77120000 CFGMGR32.dll            6.1.7600.16385     C:\Windows\syswow64
+77150000 WINTRUST.dll            6.1.7600.16493     C:\Windows\syswow64
+77180000 sechost.dll             6.1.7600.16385     C:\Windows\SysWOW64
+771b0000 CLBCatQ.DLL             2001.12.8530.16385 C:\Windows\syswow64
+772a0000 WLDAP32.dll             6.1.7600.16385     C:\Windows\syswow64
+772f0000 CRYPT32.dll             6.1.7600.16385     C:\Windows\syswow64
+77410000 SHLWAPI.dll             6.1.7600.16385     C:\Windows\syswow64
+77470000 SETUPAPI.dll            6.1.7600.16385     C:\Windows\syswow64
+77610000 ADVAPI32.dll            6.1.7600.16385     C:\Windows\syswow64
+776e0000 IMM32.DLL               6.1.7600.16385     C:\Windows\system32
+77740000 kernel32.dll            6.1.7600.16385     C:\Windows\syswow64
+77840000 USP10.dll               1.626.7600.16385   C:\Windows\syswow64
+778e0000 oleaut32.dll            6.1.7600.16385     C:\Windows\syswow64
+77dd0000 MSASN1.dll              6.1.7600.16415     C:\Windows\syswow64
+77e00000 ntdll.dll               6.1.7600.16559     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                                   0 0    0
+0004 System                                 0 0    0
+0208 smss.exe                               0 0    0   normal
+0344 csrss.exe                              0 0    0   normal
+03f0 wininit.exe                            0 0    0   high
+03f8 csrss.exe                              1 174  81  normal
+02f8 services.exe                           0 0    0   normal
+0210 lsass.exe                              0 0    0   normal
+0310 lsm.exe                                0 0    0   normal
+03c8 winlogon.exe                           1 6    0   high
+0410 svchost.exe                            0 0    0   normal
+0454 ASCService.exe                         0 0    0   normal C:\Program Files (x86)\IObit\Advanced SystemCare 8
+04a4 nvvsvc.exe                             0 0    0   normal
+04bc nvSCPAPISvr.exe                        0 0    0   normal C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+04d8 GbpSv.exe                              0 0    0   normal C:\Program Files (x86)\GbPlugin
+0524 svchost.exe                            0 0    0   normal
+0588 svchost.exe                            0 0    0   normal
+05b4 svchost.exe                            0 0    0   normal
+05d0 svchost.exe                            0 0    0   normal
+0670 svchost.exe                            0 0    0   normal
+06a8 igfxCUIService.exe                     0 0    0   normal
+06ec nvxdsync.exe                           1 32   8   normal
+06f4 nvvsvc.exe                             1 9    5   normal
+0720 svchost.exe                            0 0    0   normal
+07f8 spoolsv.exe                            0 0    0   normal
+0718 taskhost.exe                           1 26   21  normal
+0794 svchost.exe                            0 0    0   normal
+0854 explorer.exe                           1 1233 673 normal
+0920 ASO3DefragSrv64.exe                    0 0    0   normal
+0948 avp.exe                                0 0    0   normal C:\Program Files (x86)\Kaspersky Lab\Kaspersky Total Security 16.0.1
+0970 svchost.exe                            0 0    0   normal
+0990 GfExperienceService.exe                0 0    0   normal
+09a8 taskeng.exe                            1 9    3   normal
+0a48 SmartDefrag.exe                        1 315  167 normal C:\Program Files (x86)\IObit\Smart Defrag 4
+0a60 iviRegMgr.exe                          0 0    0   normal c:\Program Files (x86)\Common Files\InterVideo\RegMgr
+0ad8 NvNetworkService.exe                   0 0    0   normal C:\Program Files (x86)\NVIDIA Corporation\NetService
+0b18 NvStreamService.exe                    0 0    0   normal
+0b50 PDAgent.exe                            0 0    0   normal
+0b98 pg_ctl.exe                             0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0be4 KillerService.exe                      0 0    0   normal
+0b10 ss_conn_service.exe                    0 0    0   normal E:\Program Files (x86)\Samsung\USB Drivers\25_escape\conn
+09a0 svchost.exe                            0 0    0   normal
+0c2c TeamViewer_Service.exe                 0 0    0   normal C:\Program Files (x86)\TeamViewer
+0c74 vmnat.exe                              0 0    0   normal C:\Windows\SysWOW64
+0c94 core.exe                               0 0    0   normal
+0cbc vmnetdhcp.exe                          0 0    0   normal C:\Windows\SysWOW64
+0ce8 vmware-usbarbitrator64.exe             0 0    0   normal
+0cf4 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0cfc conhost.exe                            0 0    0   normal
+0d4c WmiPrvSE.exe                           0 0    0   normal
+0d54 vmware-authd.exe                       0 0    0   normal E:\Program Files (x86)\VMware\VMware Waorkstation
+0f58 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0bd4 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0cf0 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0d14 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0d24 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0dbc postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0dd4 vmware-hostd.exe                       0 0    0   normal E:\Program Files (x86)\VMware\VMware Waorkstation
+10bc TeamViewer.exe                         1 260  91  high   C:\Program Files (x86)\TeamViewer
+1170 avpui.exe                              1 87   59  normal C:\Program Files (x86)\Kaspersky Lab\Kaspersky Total Security 16.0.1
+122c tv_w32.exe                             1 4    2   normal C:\Program Files (x86)\TeamViewer
+1234 tv_x64.exe                             1 4    2   normal
+11fc PresentationFontCache.exe              0 0    0   normal
+12fc GbpSv.exe                              1 10   10  normal C:\Program Files (x86)\GbPlugin
+13c0 svchost.exe                            0 0    0   normal
+14b0 NvStreamNetworkService.exe             0 0    0   normal
+15a0 PDAgentS1.exe                          1 9    4   normal
+15ec RtkNGUI64.exe                          1 22   31  normal
+15f4 NvBackend.exe                          1 9    12  normal C:\Program Files (x86)\NVIDIA Corporation\Update Core
+162c core.exe                               1 9    10  normal
+1644 ASCTray.exe                            1 139  95  normal C:\Program Files (x86)\IObit\Advanced SystemCare 8
+1670 NvStreamUserAgent.exe                  1 12   9   normal
+168c conhost.exe                            1 23   8   normal
+16ac NetworkManager.exe                     1 39   24  normal C:\Program Files\Qualcomm Atheros\Network Manager
+1494 WinPatrol.exe                          1 29   10  normal C:\Program Files (x86)\BillP Studios\WinPatrol
+0844 iusb3mon.exe                           1 18   8   normal C:\Program Files (x86)\Intel\Intel(R) USB 3.0 eXtensible Host Controller Driver\Application
+14bc VCDDaemon.exe                          1 18   8   normal E:\Program Files (x86)\Elaborate Bytes\VirtualCloneDrive
+17c0 hpwuschd2.exe                          1 9    4   normal C:\Program Files (x86)\HP\HP Software Update
+1754 ISHelper.exe                           1 66   49  normal C:\Program Files (x86)\Common Files\iSkysoft\iSkysoft Helper Compact
+1730 nvtray.exe                             1 81   4   normal
+1a38 SearchIndexer.exe                      0 0    0   normal
+1b14 wmpnetwk.exe                           0 0    0   normal
+1aa0 svchost.exe                            0 0    0   normal
+1ffc UninstallMonitor.exe                   1 40   22  normal C:\Program Files (x86)\IObit\IObit Uninstaller
+1db8 AGSService.exe                         0 0    0   normal C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient
+08a4 HPSupportSolutionsFrameworkService.exe 0 0    0   normal
+1b88 jhi_service.exe                        0 0    0   normal C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+15fc LMS.exe                                0 0    0   normal C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\LMS
+1fb4 svchost.exe                            0 0    0   normal
+1f68 wuauclt.exe                            1 12   5   normal
+1d5c chrome.exe                             1 58   114 normal C:\Program Files (x86)\Google\Chrome\Application
+186c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1c9c chrome.exe                             1 13   17  normal C:\Program Files (x86)\Google\Chrome\Application
+0c24 chrome.exe                             1 4    7   normal C:\Program Files (x86)\Google\Chrome\Application
+1f5c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1c28 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+13a8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0594 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ea0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1d90 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1e48 audiodg.exe                            0 0    0
+13ac chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ee0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0e68 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0f40 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0a68 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1dac chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1fe0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1874 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+16bc chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0ea4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+156c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ea8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+11dc chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2068 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+207c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+20f8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2104 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2164 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+21d8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+228c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+22c0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+23f4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+23d0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2088 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+102c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2398 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0cc4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0908 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+21c8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2318 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0700 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1484 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2418 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1d74 ADMINISTRADOR.exe                      1 39   24  normal I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\ADMINISTRADOR\Win32\Debug
+1570 pgAdmin3.exe                           1 1558 474 normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+2288 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+271c postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+24ec postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+2790 DllHost.exe                            1 9    5   normal C:\Windows\SysWOW64
+2470 adb.exe                                1 9    5   normal E:\Program Files (x86)\Embarcadero\Studio\16.0\PlatformSDKs\android-sdk-windows\platform-tools
+15c0 bds.exe                                1 3288 812 normal E:\Program Files (x86)\Embarcadero\Studio\16.0\bin
+2310 wmi64.exe                              0 0    0   normal
+29d4 InfamatV5_SocialXE8.exe                1 56   48  normal I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+2988 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+2a88 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - KINGSTON SHFS37A120G ATA Device
+  - MAXTOR STM3250310AS ATA Device
+  - Seagate Expansion Desk USB Device
+  - Seagate Expansion USB Device
+  - Sony Hard Drive USB Device
+  - ST3000DM001-1ER166 ATA Device
+  - ST3320613AS ATA Device
++ Display adapters
+  - Intel(R) HD Graphics 4600 (driver 10.18.10.3540)
+  - NVIDIA GeForce GTX 960 (driver 10.18.13.5850)
++ DVD/CD-ROM drives
+  - ELBY CLONEDRIVE SCSI CdRom Device
+  - HL-DT-ST BD-RE  WH14NS40 ATA Device
++ Human Interface Devices
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant device
+  - HID-compliant device
+  - USB Input Device
+  - USB Input Device
+  - USB Input Device
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - ATA Channel 3
+  - ATA Channel 4
+  - ATA Channel 5
+  - Intel(R) 9 Series Chipset Family SATA AHCI Controller  - 8C82
++ Keyboards
+  - HID Keyboard Device
++ Mice and other pointing devices
+  - HID-compliant mouse
++ Monitors
+  - Generic PnP Monitor
+  - Generic PnP Monitor
++ Network adapters
+  - Killer e2200 PCI-E Gigabit Ethernet Controller (NDIS 6.20) (driver 8.0.2.42)
+  - Microsoft ISATAP Adapter
+  - Microsoft ISATAP Adapter #2
+  - Microsoft ISATAP Adapter #3
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.2.3.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.2.3.0)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPPOE)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ Ports (COM & LPT)
+  - Communications Port (COM1)
+  - Printer Port (LPT1)
++ Processors
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
++ Sound, video and game controllers
+  - Intel(R) Display Audio (driver 6.16.0.3137)
+  - NVIDIA High Definition Audio (driver 1.3.34.3)
+  - NVIDIA Virtual Audio Device (Wave Extensible) (WDM) (driver 1.2.40.0)
+  - Realtek High Definition Audio (driver 6.0.1.7256)
++ Storage controllers
+  - Virtual CloneDrive (driver 5.4.7.0)
++ System devices
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - ACPI Sleep Button
+  - ACPI Thermal Zone
+  - ACPI Thermal Zone
+  - Composite Bus Enumerator
+  - Direct memory access controller
+  - Extended IO Bus
+  - File as Volume Driver
+  - High Definition Audio Controller
+  - High Definition Audio Controller
+  - High precision event timer
+  - Intel(R) 4th Gen Core processor DRAM Controller - 0C00
+  - Intel(R) 82802 Firmware Hub Device
+  - Intel(R) 9 Series Chipset Family High Definition Audio Controller  - 8CA0
+  - Intel(R) 9 Series Chipset Family PCI Express Root Port 1 - 8C90
+  - Intel(R) 9 Series Chipset Family PCI Express Root Port 3  - 8C94
+  - Intel(R) 9 Series Chipset Family SMBus Host Controller  - 8CA2 (driver 10.0.20.0)
+  - Intel(R) H97 Chipset LPC Controller - 8CC6
+  - Intel(R) Management Engine Interface  (driver 10.0.0.1204)
+  - Intel(R) Xeon(R) processor E3-1200 v3/4th Gen Core processor PCI Express x16 Controller - 0C01
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Virtual Drive Enumerator Driver
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - PCI bus (driver 3.0.0.16)
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - Remote Desktop Device Redirector Bus
+  - System board
+  - System CMOS/real time clock
+  - System timer
+  - Terminal Server Keyboard Driver
+  - Terminal Server Mouse Driver
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Host Device (driver 9.5.10.0)
+  - Volume Manager
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) 9 Series Chipset Family USB Enhanced Host Controller  - 8CA6
+  - Intel(R) 9 Series Chipset Family USB Enhanced Host Controller  - 8CAD
+  - Intel(R) USB 3.0 eXtensible Host Controller (driver 3.0.0.16)
+  - Intel(R) USB 3.0 Root Hub (driver 3.0.0.16)
+  - USB 2.0 Hub (driver 3.0.0.16)
+  - USB 2.0 Hub (driver 3.0.0.16)
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Mass Storage Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
+
+cpu registers:
+eax = 03b9e4a8
+ebx = 00000000
+ecx = 00000000
+edx = 011c5a78
+esi = 009e7ec4
+edi = 03b9e4a8
+eip = 0096927a
+esp = 0018f85c
+ebp = 0018f8b4
+
+stack dump:
+0018f85c  7a 92 96 00 de fa ed 0e - 01 00 00 00 07 00 00 00  z...............
+0018f86c  70 f8 18 00 7a 92 96 00 - a8 e4 b9 03 00 00 00 00  p...z...........
+0018f87c  c4 7e 9e 00 a8 e4 b9 03 - b4 f8 18 00 8c f8 18 00  .~..............
+0018f88c  bc f8 18 00 7c 9d 40 00 - b4 f8 18 00 00 00 00 00  ....|.@.........
+0018f89c  8c 94 e8 03 a8 e4 b9 03 - a8 e4 b9 03 00 00 00 00  ................
+0018f8ac  00 00 00 00 00 00 00 00 - f0 f8 18 00 31 42 bd 00  ............1B..
+0018f8bc  18 f9 18 00 7c 9d 40 00 - f0 f8 18 00 00 00 00 00  ....|.@.........
+0018f8cc  c8 42 bd 00 11 6a f0 06 - 07 00 00 00 00 51 b1 05  .B...j.......Q..
+0018f8dc  00 00 00 00 68 42 bd 00 - 80 42 bd 00 94 42 bd 00  ....hB...B...B..
+0018f8ec  00 00 00 00 0c f9 18 00 - 1f 43 bd 00 0c f9 18 00  .........C......
+0018f8fc  80 38 c4 03 07 00 00 00 - 08 3a 43 0b f0 29 b6 05  .8.......:C..)..
+0018f90c  4c f9 18 00 0b 87 bd 00 - 38 8c bd 00 24 f9 18 00  L.......8...$...
+0018f91c  7c 9d 40 00 4c f9 18 00 - 74 f9 18 00 7c 9d 40 00  |.@.L...t...|.@.
+0018f92c  4c f9 18 00 ac f9 18 00 - 08 3a 43 0b 00 00 00 00  L........:C.....
+0018f93c  00 00 00 00 00 00 00 00 - 8c 94 e8 03 7c 51 c2 03  ............|Q..
+0018f94c  68 f9 18 00 d2 8c bd 00 - 68 f9 18 00 bc 7d 9e 00  h.......h....}..
+0018f95c  2c 9c c7 03 f8 8c bd 01 - 80 32 cb 03 c0 f9 18 00  ,........2......
+0018f96c  1a 8e bd 00 ac f9 18 00 - 80 f9 18 00 5b 9f 40 00  ............[.@.
+0018f97c  c0 f9 18 00 c8 f9 18 00 - 7c 9d 40 00 c0 f9 18 00  ........|.@.....
+0018f98c  00 00 00 00 bc 7d 9e 00 - 80 32 cb 03 00 00 00 00  .....}...2......
+
+disassembling:
+[...]
+00df7229      mov     fs:[eax], esp
+00df722c 51   mov     eax, [ebx+$378]
+00df7232      call    -$49cb1f ($95a718)     ; Data.DB.TDataSet.Close
+00df7237 52   mov     edx, [ebx+$398]
+00df723d      mov     eax, [ebx+$378]
+00df7243    > call    -$382428 ($a74e20)     ; FireDAC.Comp.Client.TFDRdbmsDataSet.Open
+00df7248 53   mov     eax, [ebx+$378]
+00df724e      call    -$49976b ($95dae8)     ; Data.DB.TDataSet.First
+00df7253 54   mov     eax, [ebx+$388]
+00df7259      mov     eax, [eax+$4d8]
+00df725f      mov     edx, [eax]
+[...]
+
+date/time          : 2016-08-14, 19:16:54, 252ms
+computer name      : XDARK
+user name          : Administrator <admin>
+registered owner   : Microsoft / Microsoft
+operating system   : Windows 7 x64 build 7600
+system language    : English
+system up time     : 6 hours 35 minutes
+program up time    : 1 minute 6 seconds
+processors         : 4x Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+physical memory    : 1504/8054 MB (free/total)
+free disk space    : (C:) 70.90 GB (I:) 9.36 GB
+display mode       : 1920x1080, 32 bit
+process id         : $2a78
+allocated memory   : 115.32 MB
+largest free block : 492.19 MB
+executable         : InfamatV5_SocialXE8.exe
+exec. date/time    : 2016-08-14 19:15
+version            : 1.0.0.0
+compiled with      : Delphi XE8
+madExcept version  : 4.0.12
+callstack crc      : $aa76ba89, $7e82fe21, $00000000
+count              : 4
+exception number   : 4
+exception class    : EPgNativeException
+exception message  : [FireDAC][Phys][PG][libpq] ERROR: invalid input syntax for type numeric: "2,35".
+
+main thread ($251c):
+00969275 +119 InfamatV5_SocialXE8.exe FireDAC.Stan.Error                 FDException
+00bd422c +0d8 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             Error
+00bd431a +042 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgConnection.CheckResult
+00bd8706 +006 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.Check
+00bd8c33 +0e7 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             LibPrepare
+00bd8ccd +041 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.InternalPrepare
+00bd8e15 +105 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.PrepareSQL
+00be2bac +394 InfamatV5_SocialXE8.exe FireDAC.Phys.PG                    TFDPhysPgCommand.InternalPrepare
+009f7be2 +1ee InfamatV5_SocialXE8.exe FireDAC.Phys                       TFDPhysCommand.Prepare
+00a6bb41 +1cd InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.InternalPrepare
+00a6be9e +1be InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.SetPrepared
+00a6c3d9 +019 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.Prepare
+00a72bda +0d6 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDAdaptedDataSet.DoPrepareSource
+00a749a9 +049 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.SetPrepared
+00a74ca2 +002 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Prepare
+00a74e08 +158 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Open
+00a74e2d +00d InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Open
+00e13654 +078 InfamatV5_SocialXE8.exe unLib                     1081  +6 TLib.Select
+00e0a9ea +266 InfamatV5_SocialXE8.exe unCadastroProduto          554 +33 TframeCadastroProduto.SalvarRegistro
+00e0a0a7 +017 InfamatV5_SocialXE8.exe unCadastroProduto          450  +0 TframeCadastroProduto.NumberBoxQtdeEstoqueExit
+00879743 +057 InfamatV5_SocialXE8.exe FMX.Controls                       TControl.DoExit
+006a0cf1 +005 InfamatV5_SocialXE8.exe FMX.Controls.Presentation          TPresentedControl.DoExit
+008fb7ab +04b InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.ClearFocusedControl
+008fd506 +09e InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.SetFocused$275$ActRec.$0$Body
+0058e4a8 +034 InfamatV5_SocialXE8.exe FMX.Utils                          TNonReentrantHelper.Execute
+008fd5a1 +05d InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.SetFocused
+0087989e +042 InfamatV5_SocialXE8.exe FMX.Controls                       TControl.SetFocus
+008f6197 +13b InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.AdvanceTabFocus
+008f5eac +2a0 InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.KeyDown
+0083ac45 +ef1 InfamatV5_SocialXE8.exe FMX.Platform.Win                   WndProc
+75717df5 +00a USER32.dll                                                 DispatchMessageW
+008365cc +02c InfamatV5_SocialXE8.exe FMX.Platform.Win                   TPlatformWin.HandleMessage
+008f0883 +03b InfamatV5_SocialXE8.exe FMX.Forms                          TApplication.HandleMessage
+00836417 +033 InfamatV5_SocialXE8.exe FMX.Platform.Win                   TPlatformWin.Run
+008f23f1 +05d InfamatV5_SocialXE8.exe FMX.Forms                          TApplication.Run
+00e2846b +03b InfamatV5_SocialXE8.exe InfamatV5_SocialXE8         37  +3 initialization
+77753675 +010 kernel32.dll                                               BaseThreadInitThunk
+
+main thread ($251c), inner exception level 1:
+>> EPgNativeException, [FireDAC][Phys][PG][libpq] ERROR: invalid input syntax for type numeric: "2,35"
+00969275 +119 InfamatV5_SocialXE8.exe FireDAC.Stan.Error                 FDException
+00bd422c +0d8 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             Error
+00bd431a +042 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgConnection.CheckResult
+00bd8706 +006 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.Check
+00bd8c33 +0e7 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             LibPrepare
+00bd8ccd +041 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.InternalPrepare
+00bd8e15 +105 InfamatV5_SocialXE8.exe FireDAC.Phys.PGWrapper             TPgStatement.PrepareSQL
+00be2bac +394 InfamatV5_SocialXE8.exe FireDAC.Phys.PG                    TFDPhysPgCommand.InternalPrepare
+009f7be2 +1ee InfamatV5_SocialXE8.exe FireDAC.Phys                       TFDPhysCommand.Prepare
+00a6bb41 +1cd InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.InternalPrepare
+00a6be9e +1be InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.SetPrepared
+00a6c3d9 +019 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDCustomCommand.Prepare
+00a72bda +0d6 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDAdaptedDataSet.DoPrepareSource
+00a749a9 +049 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.SetPrepared
+00a74ca2 +002 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Prepare
+00a74e08 +158 InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Open
+00a74e2d +00d InfamatV5_SocialXE8.exe FireDAC.Comp.Client                TFDRdbmsDataSet.Open
+00e13654 +078 InfamatV5_SocialXE8.exe unLib                     1081  +6 TLib.Select
+00e0a9ea +266 InfamatV5_SocialXE8.exe unCadastroProduto          554 +33 TframeCadastroProduto.SalvarRegistro
+00e0a0a7 +017 InfamatV5_SocialXE8.exe unCadastroProduto          450  +0 TframeCadastroProduto.NumberBoxQtdeEstoqueExit
+00879743 +057 InfamatV5_SocialXE8.exe FMX.Controls                       TControl.DoExit
+006a0cf1 +005 InfamatV5_SocialXE8.exe FMX.Controls.Presentation          TPresentedControl.DoExit
+008fb7ab +04b InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.ClearFocusedControl
+008fd506 +09e InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.SetFocused$275$ActRec.$0$Body
+0058e4a8 +034 InfamatV5_SocialXE8.exe FMX.Utils                          TNonReentrantHelper.Execute
+008fd5a1 +05d InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.SetFocused
+0087989e +042 InfamatV5_SocialXE8.exe FMX.Controls                       TControl.SetFocus
+008f6197 +13b InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.AdvanceTabFocus
+008f5eac +2a0 InfamatV5_SocialXE8.exe FMX.Forms                          TCommonCustomForm.KeyDown
+0083ac45 +ef1 InfamatV5_SocialXE8.exe FMX.Platform.Win                   WndProc
+75717df5 +00a USER32.dll                                                 DispatchMessageW
+008365cc +02c InfamatV5_SocialXE8.exe FMX.Platform.Win                   TPlatformWin.HandleMessage
+008f0883 +03b InfamatV5_SocialXE8.exe FMX.Forms                          TApplication.HandleMessage
+00836417 +033 InfamatV5_SocialXE8.exe FMX.Platform.Win                   TPlatformWin.Run
+008f23f1 +05d InfamatV5_SocialXE8.exe FMX.Forms                          TApplication.Run
+00e2846b +03b InfamatV5_SocialXE8.exe InfamatV5_SocialXE8         37  +3 initialization
+77753675 +010 kernel32.dll                                               BaseThreadInitThunk
+
+thread $24b0:
+77e200e6 +0e ntdll.dll     NtWaitForMultipleObjects
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $29e4:
+77e200e6 +0e ntdll.dll       NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll  WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll    WaitForMultipleObjectsEx
+7775191c +13 kernel32.dll    WaitForMultipleObjects
+77753675 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $1acc:
+77e200e6 +0e ntdll.dll                         NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll                    WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll                      WaitForMultipleObjectsEx
+757203d4 +f4 USER32.dll                        MsgWaitForMultipleObjectsEx
+75720669 +1a USER32.dll                        MsgWaitForMultipleObjects
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+746178b3 +00 gdiplus.dll
+
+thread $2268: <priority:1>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1c04:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2780: <priority:1>
+77e1f8e2 +0e ntdll.dll                         NtRemoveIoCompletion
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+6d7ec3df +00 mswsock.dll
+
+thread $2034: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1410: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $13e8: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $690: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $267c: <priority:1>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $e60: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $255c: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2bd0: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1e38: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2938:
+77e200e6 +0e ntdll.dll                         NtWaitForMultipleObjects
+7581095c +fa KERNELBASE.dll                    WaitForMultipleObjectsEx
+77751628 +89 kernel32.dll                      WaitForMultipleObjectsEx
+7775191c +13 kernel32.dll                      WaitForMultipleObjects
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $1ca4: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $233c: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $215c: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $29ec: <priority:-15>
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2268 at:
+067b86cd +00 nvwgf2um.dll
+
+thread $2924:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $26ec:
+77e1f85a +0e ntdll.dll                         NtWaitForSingleObject
+75810810 +92 KERNELBASE.dll                    WaitForSingleObjectEx
+7775117f +3e kernel32.dll                      WaitForSingleObjectEx
+77751133 +0d kernel32.dll                      WaitForSingleObject
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by main thread ($251c) at:
+067b86cd +00 nvwgf2um.dll
+
+thread $222c:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2a18:
+77e1fd1a +0e ntdll.dll                         NtDelayExecution
+75812c4a +5f KERNELBASE.dll                    SleepEx
+7581351b +0a KERNELBASE.dll                    Sleep
+004add91 +0d InfamatV5_SocialXE8.exe madExcept CallThreadProcSafe
+004addf6 +32 InfamatV5_SocialXE8.exe madExcept ThreadExceptFrame
+77753675 +10 kernel32.dll                      BaseThreadInitThunk
+>> created by thread $2aec at:
+7531642e +00 ole32.dll
+
+thread $a40:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2984:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2940:
+77e21ecf +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+77753675 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 InfamatV5_SocialXE8.exe 1.0.0.0            I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+05c40000 libpq.dll               9.4.4.15193        I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+05c80000 VSINIT.dll              4.5.538.0          I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+05eb0000 nvwgf2um.dll            10.18.13.5850      C:\Windows\system32
+07fb0000 LIBEAY32.dll            0.9.8.6            I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+093d0000 d3d10_1.dll             6.1.7600.16385     C:\Windows\system32
+0c4d0000 d3d10core.dll           6.1.7600.16385     C:\Windows\system32
+0ca50000 d3d10_1core.dll         6.1.7600.16385     C:\Windows\system32
+0f0d0000 MSVCR120.dll            12.0.21005.1       I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+10000000 PATROLPRO.DLL           1.4.0.0            C:\Program Files (x86)\BillP Studios\WinPatrol
+10480000 FaultRep.dll            6.1.7600.16385     C:\Windows\system32
+21820000 d3d10.dll               6.1.7600.16385     C:\Windows\system32
+32100000 d2d1.dll                6.1.7600.16385     C:\Windows\system32
+50e00000 SSLEAY32.dll            5.1.33.0           I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+56c50000 shdocvw.dll             6.1.7600.16385     C:\Windows\System32
+56ca0000 LINKINFO.dll            6.1.7600.16385     C:\Windows\system32
+59720000 DWRITE.DLL              6.1.7600.16385     C:\Windows\system32
+5c200000 MSVCR80.dll             8.0.50727.6195     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a
+61cc0000 intl.dll                0.18.1.0           I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+63d50000 nvapi.dll               10.18.13.5850      C:\Windows\system32
+64080000 nvspcap.dll             2.11.3.5           C:\Windows\system32
+64ce0000 gbpinj.dll              1.4.0.0            C:\Program Files (x86)\GbPlugin
+67960000 windowscodecs.dll       6.1.7600.16385     C:\Windows\system32
+68790000 d3d9.dll                6.1.7600.16385     C:\Windows\system32
+68960000 dxgi.dll                6.1.7600.16385     C:\Windows\system32
+68a50000 d3d8thk.dll             6.1.7600.16385     C:\Windows\system32
+68aa0000 d3d11.dll               6.1.7600.16385     C:\Windows\system32
+6b900000 NTDSAPI.dll             6.1.7600.16385     C:\Windows\system32
+6b920000 fastprox.dll            6.1.7600.16385     C:\Windows\system32\wbem
+6b9c0000 wbemsvc.dll             6.1.7600.16385     C:\Windows\system32\wbem
+6bc70000 wship6.dll              6.1.7600.16385     C:\Windows\System32
+6bff0000 rasadhlp.dll            6.1.7600.16385     C:\Windows\system32
+6c000000 fwpuclnt.dll            6.1.7600.16385     C:\Windows\System32
+6c080000 DNSAPI.dll              6.1.7600.16385     C:\Windows\system32
+6d480000 dwmapi.dll              6.1.7600.16385     C:\Windows\system32
+6d4d0000 wshtcpip.dll            6.1.7600.16385     C:\Windows\System32
+6d7e0000 mswsock.dll             6.1.7600.16385     C:\Windows\system32
+6d820000 WINNSI.DLL              6.1.7600.16385     C:\Windows\system32
+6d830000 uxtheme.dll             6.1.7600.16385     C:\Windows\system32
+6d8b0000 IPHLPAPI.DLL            6.1.7600.16385     C:\Windows\system32
+6e670000 Secur32.dll             6.1.7600.16484     C:\Windows\system32
+6e8f0000 wbemcomn.dll            6.1.7600.16385     C:\Windows\system32
+6e950000 webio.dll               6.1.7600.16385     C:\Windows\system32
+6e9a0000 WINHTTP.dll             6.1.7600.16385     C:\Windows\system32
+72e90000 bcryptprimitives.dll    6.1.7600.16385     C:\Windows\SysWOW64
+72ed0000 bcrypt.dll              6.1.7600.16385     C:\Windows\system32
+72ef0000 ncrypt.dll              6.1.7600.16385     C:\Windows\system32
+72f30000 rsaenh.dll              6.1.7600.16385     C:\Windows\system32
+72f70000 CRYPTSP.dll             6.1.7600.16385     C:\Windows\system32
+72fb0000 RpcRtRemote.dll         6.1.7600.16385     C:\Windows\system32
+72fc0000 wbemprox.dll            6.1.7600.16385     C:\Windows\system32\wbem
+745d0000 gdiplus.dll             6.1.7600.16385     C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca
+74850000 PROPSYS.dll             7.0.7600.16385     C:\Windows\system32
+74950000 apphelp.dll             6.1.7600.16385     C:\Windows\system32
+749a0000 comctl32.dll            6.10.7600.16385    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74b40000 ntmarta.dll             6.1.7600.16385     C:\Windows\system32
+74c00000 winmm.dll               6.1.7600.16385     C:\Windows\system32
+74c70000 profapi.dll             6.1.7600.16385     C:\Windows\system32
+74cc0000 winspool.drv            6.1.7600.16385     C:\Windows\system32
+74d70000 wsock32.dll             6.1.7600.16385     C:\Windows\system32
+74da0000 version.dll             6.1.7600.16385     C:\Windows\system32
+74e70000 CRYPTBASE.dll           6.1.7600.16385     C:\Windows\syswow64
+74e80000 SspiCli.dll             6.1.7600.16484     C:\Windows\syswow64
+75020000 PSAPI.DLL               6.1.7600.16385     C:\Windows\syswow64
+75030000 MSCTF.dll               6.1.7600.16385     C:\Windows\syswow64
+75100000 WS2_32.dll              6.1.7600.16385     C:\Windows\syswow64
+75140000 DEVOBJ.dll              6.1.7600.16385     C:\Windows\syswow64
+75260000 comdlg32.dll            6.1.7600.16385     C:\Windows\syswow64
+752e0000 ole32.dll               6.1.7600.16385     C:\Windows\syswow64
+75440000 msvcrt.dll              7.0.7600.16385     C:\Windows\syswow64
+756f0000 LPK.dll                 6.1.7600.16385     C:\Windows\syswow64
+75700000 USER32.dll              6.1.7600.16385     C:\Windows\syswow64
+75800000 KERNELBASE.dll          6.1.7600.16385     C:\Windows\syswow64
+75850000 NSI.dll                 6.1.7600.16385     C:\Windows\syswow64
+75860000 RPCRT4.dll              6.1.7600.16385     C:\Windows\syswow64
+75950000 GDI32.dll               6.1.7600.16385     C:\Windows\syswow64
+759e0000 shell32.dll             6.1.7600.16644     C:\Windows\syswow64
+77120000 CFGMGR32.dll            6.1.7600.16385     C:\Windows\syswow64
+77150000 WINTRUST.dll            6.1.7600.16493     C:\Windows\syswow64
+77180000 sechost.dll             6.1.7600.16385     C:\Windows\SysWOW64
+771b0000 CLBCatQ.DLL             2001.12.8530.16385 C:\Windows\syswow64
+772a0000 WLDAP32.dll             6.1.7600.16385     C:\Windows\syswow64
+772f0000 CRYPT32.dll             6.1.7600.16385     C:\Windows\syswow64
+77410000 SHLWAPI.dll             6.1.7600.16385     C:\Windows\syswow64
+77470000 SETUPAPI.dll            6.1.7600.16385     C:\Windows\syswow64
+77610000 ADVAPI32.dll            6.1.7600.16385     C:\Windows\syswow64
+776e0000 IMM32.DLL               6.1.7600.16385     C:\Windows\system32
+77740000 kernel32.dll            6.1.7600.16385     C:\Windows\syswow64
+77840000 USP10.dll               1.626.7600.16385   C:\Windows\syswow64
+778e0000 oleaut32.dll            6.1.7600.16385     C:\Windows\syswow64
+77dd0000 MSASN1.dll              6.1.7600.16415     C:\Windows\syswow64
+77e00000 ntdll.dll               6.1.7600.16559     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                                   0 0    0
+0004 System                                 0 0    0
+0208 smss.exe                               0 0    0   normal
+0344 csrss.exe                              0 0    0   normal
+03f0 wininit.exe                            0 0    0   high
+03f8 csrss.exe                              1 174  81  normal
+02f8 services.exe                           0 0    0   normal
+0210 lsass.exe                              0 0    0   normal
+0310 lsm.exe                                0 0    0   normal
+03c8 winlogon.exe                           1 6    0   high
+0410 svchost.exe                            0 0    0   normal
+0454 ASCService.exe                         0 0    0   normal C:\Program Files (x86)\IObit\Advanced SystemCare 8
+04a4 nvvsvc.exe                             0 0    0   normal
+04bc nvSCPAPISvr.exe                        0 0    0   normal C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+04d8 GbpSv.exe                              0 0    0   normal C:\Program Files (x86)\GbPlugin
+0524 svchost.exe                            0 0    0   normal
+0588 svchost.exe                            0 0    0   normal
+05b4 svchost.exe                            0 0    0   normal
+05d0 svchost.exe                            0 0    0   normal
+0670 svchost.exe                            0 0    0   normal
+06a8 igfxCUIService.exe                     0 0    0   normal
+06ec nvxdsync.exe                           1 32   8   normal
+06f4 nvvsvc.exe                             1 9    5   normal
+0720 svchost.exe                            0 0    0   normal
+07f8 spoolsv.exe                            0 0    0   normal
+0718 taskhost.exe                           1 26   22  normal
+0794 svchost.exe                            0 0    0   normal
+0854 explorer.exe                           1 1249 678 normal
+0920 ASO3DefragSrv64.exe                    0 0    0   normal
+0948 avp.exe                                0 0    0   normal C:\Program Files (x86)\Kaspersky Lab\Kaspersky Total Security 16.0.1
+0970 svchost.exe                            0 0    0   normal
+0990 GfExperienceService.exe                0 0    0   normal
+09a8 taskeng.exe                            1 9    3   normal
+0a48 SmartDefrag.exe                        1 315  167 normal C:\Program Files (x86)\IObit\Smart Defrag 4
+0a60 iviRegMgr.exe                          0 0    0   normal c:\Program Files (x86)\Common Files\InterVideo\RegMgr
+0ad8 NvNetworkService.exe                   0 0    0   normal C:\Program Files (x86)\NVIDIA Corporation\NetService
+0b18 NvStreamService.exe                    0 0    0   normal
+0b50 PDAgent.exe                            0 0    0   normal
+0b98 pg_ctl.exe                             0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0be4 KillerService.exe                      0 0    0   normal
+0b10 ss_conn_service.exe                    0 0    0   normal E:\Program Files (x86)\Samsung\USB Drivers\25_escape\conn
+09a0 svchost.exe                            0 0    0   normal
+0c2c TeamViewer_Service.exe                 0 0    0   normal C:\Program Files (x86)\TeamViewer
+0c74 vmnat.exe                              0 0    0   normal C:\Windows\SysWOW64
+0c94 core.exe                               0 0    0   normal
+0cbc vmnetdhcp.exe                          0 0    0   normal C:\Windows\SysWOW64
+0ce8 vmware-usbarbitrator64.exe             0 0    0   normal
+0cf4 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0cfc conhost.exe                            0 0    0   normal
+0d4c WmiPrvSE.exe                           0 0    0   normal
+0d54 vmware-authd.exe                       0 0    0   normal E:\Program Files (x86)\VMware\VMware Waorkstation
+0f58 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0bd4 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0cf0 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0d14 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0d24 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0dbc postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+0dd4 vmware-hostd.exe                       0 0    0   normal E:\Program Files (x86)\VMware\VMware Waorkstation
+10bc TeamViewer.exe                         1 260  91  high   C:\Program Files (x86)\TeamViewer
+1170 avpui.exe                              1 87   59  normal C:\Program Files (x86)\Kaspersky Lab\Kaspersky Total Security 16.0.1
+122c tv_w32.exe                             1 4    2   normal C:\Program Files (x86)\TeamViewer
+1234 tv_x64.exe                             1 4    2   normal
+11fc PresentationFontCache.exe              0 0    0   normal
+12fc GbpSv.exe                              1 10   10  normal C:\Program Files (x86)\GbPlugin
+13c0 svchost.exe                            0 0    0   normal
+14b0 NvStreamNetworkService.exe             0 0    0   normal
+15a0 PDAgentS1.exe                          1 9    4   normal
+15ec RtkNGUI64.exe                          1 22   31  normal
+15f4 NvBackend.exe                          1 9    12  normal C:\Program Files (x86)\NVIDIA Corporation\Update Core
+162c core.exe                               1 9    10  normal
+1644 ASCTray.exe                            1 139  95  normal C:\Program Files (x86)\IObit\Advanced SystemCare 8
+1670 NvStreamUserAgent.exe                  1 12   9   normal
+168c conhost.exe                            1 23   8   normal
+16ac NetworkManager.exe                     1 39   24  normal C:\Program Files\Qualcomm Atheros\Network Manager
+1494 WinPatrol.exe                          1 29   10  normal C:\Program Files (x86)\BillP Studios\WinPatrol
+0844 iusb3mon.exe                           1 18   8   normal C:\Program Files (x86)\Intel\Intel(R) USB 3.0 eXtensible Host Controller Driver\Application
+14bc VCDDaemon.exe                          1 18   8   normal E:\Program Files (x86)\Elaborate Bytes\VirtualCloneDrive
+17c0 hpwuschd2.exe                          1 9    4   normal C:\Program Files (x86)\HP\HP Software Update
+1754 ISHelper.exe                           1 66   49  normal C:\Program Files (x86)\Common Files\iSkysoft\iSkysoft Helper Compact
+1730 nvtray.exe                             1 81   4   normal
+1a38 SearchIndexer.exe                      0 0    0   normal
+1b14 wmpnetwk.exe                           0 0    0   normal
+1aa0 svchost.exe                            0 0    0   normal
+1ffc UninstallMonitor.exe                   1 40   22  normal C:\Program Files (x86)\IObit\IObit Uninstaller
+1db8 AGSService.exe                         0 0    0   normal C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient
+08a4 HPSupportSolutionsFrameworkService.exe 0 0    0   normal
+1b88 jhi_service.exe                        0 0    0   normal C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+15fc LMS.exe                                0 0    0   normal C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\LMS
+1fb4 svchost.exe                            0 0    0   normal
+1f68 wuauclt.exe                            1 12   5   normal
+1d5c chrome.exe                             1 58   114 normal C:\Program Files (x86)\Google\Chrome\Application
+186c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1c9c chrome.exe                             1 13   17  normal C:\Program Files (x86)\Google\Chrome\Application
+0c24 chrome.exe                             1 4    7   normal C:\Program Files (x86)\Google\Chrome\Application
+1f5c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1c28 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+13a8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0594 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ea0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1d90 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1e48 audiodg.exe                            0 0    0
+13ac chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ee0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0e68 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0f40 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0a68 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1dac chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1fe0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1874 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+16bc chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0ea4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+156c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1ea8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+11dc chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2068 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+207c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+20f8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2104 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2164 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+21d8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+228c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+22c0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+23f4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+23d0 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2088 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+102c chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2398 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0cc4 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0908 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+21c8 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2318 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+0700 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1484 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+2418 chrome.exe                             1 4    3   normal C:\Program Files (x86)\Google\Chrome\Application
+1d74 ADMINISTRADOR.exe                      1 39   24  normal I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\ADMINISTRADOR\Win32\Debug
+1570 pgAdmin3.exe                           1 1559 472 normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+2288 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+271c postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+24ec postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+2790 DllHost.exe                            1 9    4   normal C:\Windows\SysWOW64
+2470 adb.exe                                1 9    5   normal E:\Program Files (x86)\Embarcadero\Studio\16.0\PlatformSDKs\android-sdk-windows\platform-tools
+15c0 bds.exe                                1 3313 863 normal E:\Program Files (x86)\Embarcadero\Studio\16.0\bin
+2a88 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+294c wmi64.exe                              0 0    0   normal
+2a78 InfamatV5_SocialXE8.exe                1 57   44  normal I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Win32\Release
+2ac0 postgres.exe                           0 0    0   normal E:\Program Files (x86)\PostgreSQL\9.4\bin
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - KINGSTON SHFS37A120G ATA Device
+  - MAXTOR STM3250310AS ATA Device
+  - Seagate Expansion Desk USB Device
+  - Seagate Expansion USB Device
+  - Sony Hard Drive USB Device
+  - ST3000DM001-1ER166 ATA Device
+  - ST3320613AS ATA Device
++ Display adapters
+  - Intel(R) HD Graphics 4600 (driver 10.18.10.3540)
+  - NVIDIA GeForce GTX 960 (driver 10.18.13.5850)
++ DVD/CD-ROM drives
+  - ELBY CLONEDRIVE SCSI CdRom Device
+  - HL-DT-ST BD-RE  WH14NS40 ATA Device
++ Human Interface Devices
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant consumer control device
+  - HID-compliant device
+  - HID-compliant device
+  - USB Input Device
+  - USB Input Device
+  - USB Input Device
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - ATA Channel 3
+  - ATA Channel 4
+  - ATA Channel 5
+  - Intel(R) 9 Series Chipset Family SATA AHCI Controller  - 8C82
++ Keyboards
+  - HID Keyboard Device
++ Mice and other pointing devices
+  - HID-compliant mouse
++ Monitors
+  - Generic PnP Monitor
+  - Generic PnP Monitor
++ Network adapters
+  - Killer e2200 PCI-E Gigabit Ethernet Controller (NDIS 6.20) (driver 8.0.2.42)
+  - Microsoft ISATAP Adapter
+  - Microsoft ISATAP Adapter #2
+  - Microsoft ISATAP Adapter #3
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.2.3.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.2.3.0)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPPOE)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ Ports (COM & LPT)
+  - Communications Port (COM1)
+  - Printer Port (LPT1)
++ Processors
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+  - Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
++ Sound, video and game controllers
+  - Intel(R) Display Audio (driver 6.16.0.3137)
+  - NVIDIA High Definition Audio (driver 1.3.34.3)
+  - NVIDIA Virtual Audio Device (Wave Extensible) (WDM) (driver 1.2.40.0)
+  - Realtek High Definition Audio (driver 6.0.1.7256)
++ Storage controllers
+  - Virtual CloneDrive (driver 5.4.7.0)
++ System devices
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fan
+  - ACPI Fixed Feature Button
+  - ACPI Power Button
+  - ACPI Sleep Button
+  - ACPI Thermal Zone
+  - ACPI Thermal Zone
+  - Composite Bus Enumerator
+  - Direct memory access controller
+  - Extended IO Bus
+  - File as Volume Driver
+  - High Definition Audio Controller
+  - High Definition Audio Controller
+  - High precision event timer
+  - Intel(R) 4th Gen Core processor DRAM Controller - 0C00
+  - Intel(R) 82802 Firmware Hub Device
+  - Intel(R) 9 Series Chipset Family High Definition Audio Controller  - 8CA0
+  - Intel(R) 9 Series Chipset Family PCI Express Root Port 1 - 8C90
+  - Intel(R) 9 Series Chipset Family PCI Express Root Port 3  - 8C94
+  - Intel(R) 9 Series Chipset Family SMBus Host Controller  - 8CA2 (driver 10.0.20.0)
+  - Intel(R) H97 Chipset LPC Controller - 8CC6
+  - Intel(R) Management Engine Interface  (driver 10.0.0.1204)
+  - Intel(R) Xeon(R) processor E3-1200 v3/4th Gen Core processor PCI Express x16 Controller - 0C01
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Virtual Drive Enumerator Driver
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - Numeric data processor
+  - PCI bus (driver 3.0.0.16)
+  - Plug and Play Software Device Enumerator
+  - Printer Port Logical Interface
+  - Programmable interrupt controller
+  - Remote Desktop Device Redirector Bus
+  - System board
+  - System CMOS/real time clock
+  - System timer
+  - Terminal Server Keyboard Driver
+  - Terminal Server Mouse Driver
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Host Device (driver 9.5.10.0)
+  - Volume Manager
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) 9 Series Chipset Family USB Enhanced Host Controller  - 8CA6
+  - Intel(R) 9 Series Chipset Family USB Enhanced Host Controller  - 8CAD
+  - Intel(R) USB 3.0 eXtensible Host Controller (driver 3.0.0.16)
+  - Intel(R) USB 3.0 Root Hub (driver 3.0.0.16)
+  - USB 2.0 Hub (driver 3.0.0.16)
+  - USB 2.0 Hub (driver 3.0.0.16)
+  - USB Composite Device
+  - USB Mass Storage Device
+  - USB Mass Storage Device
+  - USB Mass Storage Device
+  - USB Root Hub
+  - USB Root Hub
+
+cpu registers:
+eax = 03b96d08
+ebx = 00000000
+ecx = 00000000
+edx = 011e5a78
+esi = 009e7ec4
+edi = 03b96d08
+eip = 0096927a
+esp = 0018f6cc
+ebp = 0018f724
+
+stack dump:
+0018f6cc  7a 92 96 00 de fa ed 0e - 01 00 00 00 07 00 00 00  z...............
+0018f6dc  e0 f6 18 00 7a 92 96 00 - 08 6d b9 03 00 00 00 00  ....z....m......
+0018f6ec  c4 7e 9e 00 08 6d b9 03 - 24 f7 18 00 fc f6 18 00  .~...m..$.......
+0018f6fc  2c f7 18 00 7c 9d 40 00 - 24 f7 18 00 00 00 00 00  ,...|.@.$.......
+0018f70c  9c 66 e0 03 08 6d b9 03 - 08 6d b9 03 00 00 00 00  .f...m...m......
+0018f71c  00 00 00 00 00 00 00 00 - 60 f7 18 00 31 42 bd 00  ........`...1B..
+0018f72c  88 f7 18 00 7c 9d 40 00 - 60 f7 18 00 00 00 00 00  ....|.@.`.......
+0018f73c  c8 42 bd 00 11 5a f0 06 - 07 00 00 00 00 b1 c0 03  .B...Z..........
+0018f74c  00 00 00 00 68 42 bd 00 - 80 42 bd 00 94 42 bd 00  ....hB...B...B..
+0018f75c  00 00 00 00 7c f7 18 00 - 1f 43 bd 00 7c f7 18 00  ....|....C..|...
+0018f76c  f0 a1 be 03 07 00 00 00 - 70 bc 1e 01 f0 29 b5 05  ........p....)..
+0018f77c  bc f7 18 00 0b 87 bd 00 - 38 8c bd 00 94 f7 18 00  ........8.......
+0018f78c  7c 9d 40 00 bc f7 18 00 - e4 f7 18 00 7c 9d 40 00  |.@.........|.@.
+0018f79c  bc f7 18 00 1c f8 18 00 - 70 bc 1e 01 00 00 00 00  ........p.......
+0018f7ac  00 00 00 00 00 00 00 00 - 9c 66 e0 03 bc 37 bd 03  .........f...7..
+0018f7bc  d8 f7 18 00 d2 8c bd 00 - d8 f7 18 00 bc 7d 9e 00  .............}..
+0018f7cc  7c 85 e1 03 f8 8c bd 01 - 50 d2 c8 03 30 f8 18 00  |.......P...0...
+0018f7dc  1a 8e bd 00 1c f8 18 00 - f0 f7 18 00 5b 9f 40 00  ............[.@.
+0018f7ec  30 f8 18 00 38 f8 18 00 - 7c 9d 40 00 30 f8 18 00  0...8...|.@.0...
+0018f7fc  00 00 00 00 bc 7d 9e 00 - 50 d2 c8 03 00 00 00 00  .....}..P.......
+
+disassembling:
+[...]
+00e13641        call    -$39eeee ($a74758)     ; FireDAC.Comp.Client.TFDRdbmsDataSet.SetConnection
+00e13646 1080   mov     eax, [ebp-8]
+00e13649        call    -$4b8f36 ($95a718)     ; Data.DB.TDataSet.Close
+00e1364e 1081   mov     edx, [ebp-4]
+00e13651        mov     eax, [ebp-8]
+00e13654      > call    -$39e839 ($a74e20)     ; FireDAC.Comp.Client.TFDRdbmsDataSet.Open
+00e13659 1082   mov     eax, [ebp-8]
+00e1365c        mov     edx, [eax+$64]
+00e1365f        cmp     edx, [eax+$60]
+00e13662        setge   al
+00e13665        test    al, al
+[...]
+
