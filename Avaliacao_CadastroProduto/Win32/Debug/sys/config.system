@@ -1,0 +1,5 @@
+[Configuracoes]
+DBIP=localhost
+DBNAME=avaliacao
+HOSTNAME=infasstec1
+REPORT_EXE_PATH=I:\Ancient Codes\Delphi\Avaliacao_CadastroProduto\Relatorios\Win32\Release
