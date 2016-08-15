@@ -1,0 +1,6 @@
+Usuario para acesso ao sistema "ADMINISTRADOR";
+para gerar a senha utilizar o "ADMINISTRADOR.exe";
+
+sistema desenvolvido utilizando Delphi XE8 e banco de dados PostgreSQL 9.4
+backup do banco de dados se encontra na pasta C:\Avaliacao_CadastroProduto\Win32\Release\BackupBD\BackupBD_BancoLimpo;
+dados para conexao do banco estão em "C:\Avaliacao_CadastroProduto\Win32\Release\sys\config.system";
